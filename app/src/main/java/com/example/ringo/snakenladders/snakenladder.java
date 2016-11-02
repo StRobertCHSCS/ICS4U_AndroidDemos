@@ -29,6 +29,9 @@ public class snakenladder extends AppCompatActivity {
     }
 
     private int progress = 1;
+    private int[] start = {54, 90, 99, 9, 40 ,67};
+    private int[] end = {19, 48, 77, 34, 64, 66};
+
 
     public void dice(View v) {
         EditText number = (EditText)findViewById(R.id.number_input);
@@ -50,11 +53,25 @@ public class snakenladder extends AppCompatActivity {
             progress += steps;
             if (progress == 54 || progress == 90 || progress == 99 || progress == 9 || progress == 40 || progress == 67) {
                 for (int j = 0; j < 6; j++) {
-                    if (progress == )
+                    if (progress == start[j]) {
+                        progress = end[j];
+                        System.out.print("You are now on square" + "" + progress);
                     }
                 }
             }
+
+            else if (progress < 100) {
+                System.out.print("You are now on square" + "" + progress);
+            }
+
+            else {
+                System.out.print("You are now on square 100");
+                System.out.print("You Win!");
+            }
         }
 
+        else {
+            System.out.print("You have to pick a number between 2 and 12");
+        }
     }
 }
