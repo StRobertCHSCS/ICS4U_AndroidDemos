@@ -23,9 +23,6 @@ public class snakenladder extends AppCompatActivity {
 
         ArrayList<Integer> start = new ArrayList<Integer>();
 
-
-
-
     }
 
     private int progress = 1;
