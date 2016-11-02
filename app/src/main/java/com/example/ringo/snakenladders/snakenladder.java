@@ -34,16 +34,18 @@ public class snakenladder extends AppCompatActivity {
 
 
     public void dice(View v) {
-        EditText number = (EditText)findViewById(R.id.number_input);
+        EditText number = (EditText)findViewById(R.id.input);
         String num = number.getText().toString();
         int intNum = Integer.parseInt(num);
 
-        TextView results = (TextView)findViewById(R.id.results);
+        TextView results = (TextView)findViewById(R.id.output);
         results.setText(getPosition(intNum));
 
     }
 
     private String getPosition(int steps){
+
+        String text = "";
 
         if (steps == 0) {
             System.out.print("You Quit!");
@@ -55,23 +57,24 @@ public class snakenladder extends AppCompatActivity {
                 for (int j = 0; j < 6; j++) {
                     if (progress == start[j]) {
                         progress = end[j];
-                        System.out.print("You are now on square" + "" + progress);
+                        text = "You are now on square" + "" + progress;
                     }
                 }
             }
 
             else if (progress < 100) {
-                System.out.print("You are now on square" + "" + progress);
+                text = "You are now on square" + "" + progress;
             }
 
             else {
-                System.out.print("You are now on square 100");
-                System.out.print("You Win!");
+                text = "You are now on square 100. You Win!";
             }
         }
 
         else {
-            System.out.print("You have to pick a number between 2 and 12");
+            text = "You have to pick a number between 2 and 12";
         }
+
+        return text;
     }
 }
