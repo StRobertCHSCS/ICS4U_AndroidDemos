@@ -57,13 +57,13 @@ public class snakenladder extends AppCompatActivity {
                 for (int j = 0; j < 6; j++) {
                     if (progress == start[j]) {
                         progress = end[j];
-                        text = "You are now on square" + "" + progress;
+                        text = "You are now on square " + "" + progress;
                     }
                 }
             }
 
             else if (progress < 100) {
-                text = "You are now on square" + "" + progress;
+                text = "You are now on square " + "" + progress;
             }
 
             else {
