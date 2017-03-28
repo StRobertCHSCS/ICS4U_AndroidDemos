@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Convert the list of similes into a string (with similes separated by new lines)
-     * @param simList
+     * @param simList an ArrayList of simile strings
      * @return a single strings with the similes list concatenated
      */
     private String getSimilesStr(ArrayList<String> simList){
