@@ -65,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
      * @param simList
      * @return a single strings with the similes list concatenated
      */
-
     private String getSimilesStr(ArrayList<String> simList){
         //Convert the list of similes
 
