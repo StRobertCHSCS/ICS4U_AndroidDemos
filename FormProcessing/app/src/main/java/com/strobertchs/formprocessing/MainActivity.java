@@ -17,7 +17,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //click event that gets data from form and makes the necessary method calls to process the similes
+    /**
+     * Click event that gets data from form and makes the necessary method calls to process the similes
+     *
+     * @param v View object to get UI objects from layout
+     */
     public void simClick(View v){
 
         // get data from the text fields
@@ -38,7 +42,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //Generate the list if similes based on the adjectives and nouns
+    /**
+     * Generate the list if similes based on the adjectives and nouns.
+     * @param adjList string list of adjectives.
+     * @param nounList string list of nouns.
+     * @return ArrayList of simile strings
+     */
     private ArrayList<String> getSimiles(String adjList[], String nounList[]){
         ArrayList<String> similations = new ArrayList<String>();
 
@@ -49,10 +58,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return similations;
-    }//end getSimiles
+    }
 
+    /**
+     * Convert the list of similes into a string (with similes separated by new lines)
+     * @param simList
+     * @return a single strings with the similes list concatenated
+     */
 
-    // Convert the list of similes into a string (with similes separated by new lines)
     private String getSimilesStr(ArrayList<String> simList){
         //Convert the list of similes
 
