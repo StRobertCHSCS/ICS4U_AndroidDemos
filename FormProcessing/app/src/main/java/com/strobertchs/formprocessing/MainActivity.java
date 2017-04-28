@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -16,10 +17,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-
     /**
      * Click event that gets data from form and makes the necessary method calls to process the similes
-     *
      * @param v View object to get UI objects from layout
      */
     public void simClick(View v){
