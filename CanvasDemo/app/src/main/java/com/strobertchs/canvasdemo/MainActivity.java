@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
         //Create a bitmap object to use as our canvas
         Bitmap ourBitmap = Bitmap.createBitmap(1200,2400, Bitmap.Config.ARGB_8888);
+  
 
         Canvas ourCanvas = new Canvas(ourBitmap);
 
